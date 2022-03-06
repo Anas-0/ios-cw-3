@@ -9,8 +9,48 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Text("My Favorite Characters")
+                .padding()
+            HStack {
+                VStack {
+                    Image("Thor")
+                        .resizable()
+                        .frame(width: 140, height: 140)
+                    Text("Thor")
+                    
+                    
+                }
+                VStack{
+                    Image("Desmond")
+                        .resizable()
+                        .frame(width: 140, height: 140)
+                    Text("Desmond")
+                }
+                
+            }
+            HStack {
+                VStack {
+                    Image("Eren")
+                        .resizable()
+                        .frame(width: 140, height: 140)
+                    Text("Eren")
+                }
+                VStack{
+                    Image("Ragnar")
+                        .resizable()
+                        .frame(width: 140, height: 140)
+                    Text("Ragnar")
+                }
+                VStack{
+                    Image("Minato")
+                        .resizable()
+                        .frame(width: 140, height: 140)
+                    Text("Minato")
+                }
+            }
+        }
     }
 }
 
@@ -19,3 +59,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
